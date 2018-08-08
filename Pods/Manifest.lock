@@ -1,0 +1,140 @@
+PODS:
+  - AWSAuthCore (2.6.25):
+    - AWSCore (= 2.6.25)
+  - AWSAuthUI (2.6.25):
+    - AWSAuthCore (= 2.6.25)
+    - AWSCore (= 2.6.25)
+  - AWSCognitoIdentityProvider (2.6.25):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.25)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.25)
+  - AWSDynamoDB (2.6.25):
+    - AWSCore (= 2.6.25)
+  - AWSFacebookSignIn (2.6.25):
+    - AWSAuthCore (= 2.6.25)
+    - FBSDKCoreKit (~> 4.0)
+    - FBSDKLoginKit (~> 4.0)
+  - AWSGoogleSignIn (2.6.25):
+    - AWSAuthCore (= 2.6.25)
+  - AWSMobileClient (2.6.25):
+    - AWSAuthCore (= 2.6.25)
+  - AWSPinpoint (2.6.25):
+    - AWSCore (= 2.6.25)
+  - AWSUserPoolsSignIn (2.6.25):
+    - AWSAuthCore (= 2.6.25)
+    - AWSCognitoIdentityProvider (= 2.6.25)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.35.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.35.0):
+    - FBSDKCoreKit
+  - GoogleSignIn (4.1.2):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.2.0):
+    - GTMSessionFetcher/Full (= 1.2.0)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GTMSessionFetcher/Full (1.2.0):
+    - GTMSessionFetcher/Core (= 1.2.0)
+  - OneSignal (2.8.5)
+  - Realm (3.7.5):
+    - Realm/Headers (= 3.7.5)
+  - Realm/Headers (3.7.5)
+  - RealmSwift (3.7.5):
+    - Realm (= 3.7.5)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxRealm (0.7.5):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+
+DEPENDENCIES:
+  - AWSAuthUI (~> 2.6.13)
+  - AWSDynamoDB (~> 2.6.13)
+  - AWSFacebookSignIn (~> 2.6.13)
+  - AWSGoogleSignIn (~> 2.6.13)
+  - AWSMobileClient (~> 2.6.13)
+  - AWSPinpoint (~> 2.6.13)
+  - AWSUserPoolsSignIn (~> 2.6.13)
+  - GoogleSignIn (~> 4.0)
+  - OneSignal (< 3.0, >= 2.6.2)
+  - RealmSwift (~> 3.0)
+  - RxCocoa (~> 4.0)
+  - RxRealm
+  - RxSwift (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSDynamoDB
+    - AWSFacebookSignIn
+    - AWSGoogleSignIn
+    - AWSMobileClient
+    - AWSPinpoint
+    - AWSUserPoolsSignIn
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - OneSignal
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRealm
+    - RxSwift
+
+SPEC CHECKSUMS:
+  AWSAuthCore: ee797576ca94ef45b48cbf40bb113944791a09ab
+  AWSAuthUI: 45a637989cb188f504ac21152198f06cd2ccfc2c
+  AWSCognitoIdentityProvider: 4a417e3f669c310253be85b0b0d884e144758761
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 93ac57c361f6ff9c0749adf9404c4a1a1ecdaa2b
+  AWSDynamoDB: b891ec00abf6b58ca850172e4f92ed8de53d1b16
+  AWSFacebookSignIn: 80dcad7514073e07a62f7e716576f2c6fa69e23c
+  AWSGoogleSignIn: e3fe79957cda083fb8354d45eeb94372502af097
+  AWSMobileClient: 89f45bf39e73dedc2c9ce673146167e2009e8200
+  AWSPinpoint: 20ce4ece7e0726756e162a72311a4faa02564069
+  AWSUserPoolsSignIn: 973edde05954dac3069e32c059c24495d9fb9134
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 1a5b2e3ceb5ca827a53c54aa5f4a3480efff80d2
+  FBSDKLoginKit: 00a3d65d1226852f9d76dcddff01981e5e6d9c38
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  OneSignal: 42dae269c7eca517aee34963820e1eb922390031
+  Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
+  RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+
+PODFILE CHECKSUM: ed4087347bfb505f6ce74fb1597eb675e60fe9d6
+
+COCOAPODS: 1.5.3

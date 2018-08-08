@@ -1,0 +1,6 @@
+framework module Pods_warranty {
+  umbrella header "Pods-warranty-umbrella.h"
+
+  export *
+  module * { export * }
+}

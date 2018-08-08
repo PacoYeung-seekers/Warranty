@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1827B60D21170AC6009C189D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1827B60C21170AC5009C189D /* awsconfiguration.json */; };
+		1827B61221170B35009C189D /* AWSNoSQLWarranty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827B60E21170B34009C189D /* AWSNoSQLWarranty.swift */; };
+		1827B61321170B35009C189D /* AWSNoSQLHashtag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827B60F21170B34009C189D /* AWSNoSQLHashtag.swift */; };
+		1827B61421170B35009C189D /* AWSNoSQLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827B61021170B35009C189D /* AWSNoSQLUser.swift */; };
+		1827B61521170B35009C189D /* AWSNoSQLBagBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827B61121170B35009C189D /* AWSNoSQLBagBrand.swift */; };
+		183C671220FF97D00038F7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C671120FF97D00038F7B3 /* AppDelegate.swift */; };
+		183C671420FF97D00038F7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C671320FF97D00038F7B3 /* ViewController.swift */; };
+		183C671720FF97D00038F7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183C671520FF97D00038F7B3 /* Main.storyboard */; };
+		183C671920FF97D20038F7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183C671820FF97D20038F7B3 /* Assets.xcassets */; };
+		183C671C20FF97D20038F7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183C671A20FF97D20038F7B3 /* LaunchScreen.storyboard */; };
+		18446EB32108AE3A00D85DD1 /* AppUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18446EB22108AE3A00D85DD1 /* AppUserDefault.swift */; };
+		189569F7210C58A400070BF3 /* RealmWarrantyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189569F6210C58A400070BF3 /* RealmWarrantyItem.swift */; };
+		189569F9210C58EA00070BF3 /* ValWarrantyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189569F8210C58EA00070BF3 /* ValWarrantyItem.swift */; };
+		189569FB210C596500070BF3 /* RealmBagBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189569FA210C596500070BF3 /* RealmBagBrand.swift */; };
+		189569FF210C59BE00070BF3 /* ValBagBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189569FE210C59BE00070BF3 /* ValBagBrand.swift */; };
+		18956A01210C5A2400070BF3 /* RealmHashtag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18956A00210C5A2400070BF3 /* RealmHashtag.swift */; };
+		18956A03210C5A3C00070BF3 /* ValHashtag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18956A02210C5A3C00070BF3 /* ValHashtag.swift */; };
+		18956A08210C5C5F00070BF3 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18956A07210C5C5F00070BF3 /* RealmService.swift */; };
+		18956A0A210CBF7C00070BF3 /* RealmConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18956A09210CBF7C00070BF3 /* RealmConnection.swift */; };
+		18956A0C210CC01500070BF3 /* RealmServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18956A0B210CC01500070BF3 /* RealmServiceError.swift */; };
+		189C2E8F2115614F00DD871B /* ObjectDataStoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C2E8E2115614F00DD871B /* ObjectDataStoreProvider.swift */; };
+		189C2E91211561B100DD871B /* InjectionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C2E90211561B100DD871B /* InjectionMap.swift */; };
+		189C2E93211562CF00DD871B /* LocalStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C2E92211562CF00DD871B /* LocalStorageProtocol.swift */; };
+		189C2E952115D52C00DD871B /* WarrantyItemDataStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C2E942115D52C00DD871B /* WarrantyItemDataStoreProtocol.swift */; };
+		18F344812116C2FA007546BA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F344802116C2FA007546BA /* NotificationService.swift */; };
+		18F344852116C2FA007546BA /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18F3447E2116C2FA007546BA /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D112895B2C9FA7D3C4292BD /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743E09AFF99C1083D03ADDBE /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		9B7D8B620D05114E4232338D /* Pods_warranty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331EA347D72A1E4C29BC578C /* Pods_warranty.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F344832116C2FA007546BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 183C670620FF97D00038F7B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F3447D2116C2FA007546BA;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18F344792116C2D9007546BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18F344852116C2FA007546BA /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17326D328E69000C9E37EC0E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		1827B60C21170AC5009C189D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		1827B60E21170B34009C189D /* AWSNoSQLWarranty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSNoSQLWarranty.swift; sourceTree = "<group>"; };
+		1827B60F21170B34009C189D /* AWSNoSQLHashtag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSNoSQLHashtag.swift; sourceTree = "<group>"; };
+		1827B61021170B35009C189D /* AWSNoSQLUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSNoSQLUser.swift; sourceTree = "<group>"; };
+		1827B61121170B35009C189D /* AWSNoSQLBagBrand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSNoSQLBagBrand.swift; sourceTree = "<group>"; };
+		183C670E20FF97D00038F7B3 /* warranty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = warranty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		183C671120FF97D00038F7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		183C671320FF97D00038F7B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		183C671620FF97D00038F7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183C671820FF97D20038F7B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183C671B20FF97D20038F7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183C671D20FF97D20038F7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18446EB22108AE3A00D85DD1 /* AppUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefault.swift; sourceTree = "<group>"; };
+		189569F6210C58A400070BF3 /* RealmWarrantyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWarrantyItem.swift; sourceTree = "<group>"; };
+		189569F8210C58EA00070BF3 /* ValWarrantyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValWarrantyItem.swift; sourceTree = "<group>"; };
+		189569FA210C596500070BF3 /* RealmBagBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBagBrand.swift; sourceTree = "<group>"; };
+		189569FE210C59BE00070BF3 /* ValBagBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValBagBrand.swift; sourceTree = "<group>"; };
+		18956A00210C5A2400070BF3 /* RealmHashtag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHashtag.swift; sourceTree = "<group>"; };
+		18956A02210C5A3C00070BF3 /* ValHashtag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValHashtag.swift; sourceTree = "<group>"; };
+		18956A07210C5C5F00070BF3 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		18956A09210CBF7C00070BF3 /* RealmConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConnection.swift; sourceTree = "<group>"; };
+		18956A0B210CC01500070BF3 /* RealmServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceError.swift; sourceTree = "<group>"; };
+		189C2E8E2115614F00DD871B /* ObjectDataStoreProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDataStoreProvider.swift; sourceTree = "<group>"; };
+		189C2E90211561B100DD871B /* InjectionMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionMap.swift; sourceTree = "<group>"; };
+		189C2E92211562CF00DD871B /* LocalStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageProtocol.swift; sourceTree = "<group>"; };
+		189C2E942115D52C00DD871B /* WarrantyItemDataStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarrantyItemDataStoreProtocol.swift; sourceTree = "<group>"; };
+		18F344692116BA16007546BA /* warranty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = warranty.entitlements; sourceTree = "<group>"; };
+		18F344702116C2D9007546BA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		18F344722116C2D9007546BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F3447E2116C2FA007546BA /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F344802116C2FA007546BA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		18F344822116C2FA007546BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F344892116C42D007546BA /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		218CF3081FE60A1A71E697C0 /* Pods-warranty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warranty.release.xcconfig"; path = "Pods/Target Support Files/Pods-warranty/Pods-warranty.release.xcconfig"; sourceTree = "<group>"; };
+		268B969D9CC3FB4258CAB651 /* Pods-warranty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-warranty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-warranty/Pods-warranty.debug.xcconfig"; sourceTree = "<group>"; };
+		331EA347D72A1E4C29BC578C /* Pods_warranty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_warranty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743E09AFF99C1083D03ADDBE /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B738AA213DC581A5E2CEEDFD /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183C670B20FF97D00038F7B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7D8B620D05114E4232338D /* Pods_warranty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F3447B2116C2FA007546BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D112895B2C9FA7D3C4292BD /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1827B6012116E743009C189D /* AWSNoSQLObject */ = {
+			isa = PBXGroup;
+			children = (
+				1827B61121170B35009C189D /* AWSNoSQLBagBrand.swift */,
+				1827B60F21170B34009C189D /* AWSNoSQLHashtag.swift */,
+				1827B61021170B35009C189D /* AWSNoSQLUser.swift */,
+				1827B60E21170B34009C189D /* AWSNoSQLWarranty.swift */,
+			);
+			path = AWSNoSQLObject;
+			sourceTree = "<group>";
+		};
+		183C670520FF97D00038F7B3 = {
+			isa = PBXGroup;
+			children = (
+				183C671020FF97D00038F7B3 /* warranty */,
+				18F3446F2116C2D9007546BA /* PNOneSignal */,
+				18F3447F2116C2FA007546BA /* OneSignalNotificationServiceExtension */,
+				183C670F20FF97D00038F7B3 /* Products */,
+				2FB2B3C7519D20B9E903BD3E /* Pods */,
+				34BF9343BFC251D78492A8DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		183C670F20FF97D00038F7B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183C670E20FF97D00038F7B3 /* warranty.app */,
+				18F3447E2116C2FA007546BA /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183C671020FF97D00038F7B3 /* warranty */ = {
+			isa = PBXGroup;
+			children = (
+				18F344692116BA16007546BA /* warranty.entitlements */,
+				189C2E8D21154C4A00DD871B /* Resource */,
+				189C2E8C21154C4000DD871B /* DependencyInjection */,
+				18956A06210C5B5C00070BF3 /* Services */,
+				18446EB92108B3D200D85DD1 /* DataStoreProvider */,
+				18446EB12108AD9E00D85DD1 /* Utility */,
+				18446EAE21089E8300D85DD1 /* Models */,
+				183C671120FF97D00038F7B3 /* AppDelegate.swift */,
+				183C671320FF97D00038F7B3 /* ViewController.swift */,
+				183C671520FF97D00038F7B3 /* Main.storyboard */,
+				183C671820FF97D20038F7B3 /* Assets.xcassets */,
+				183C671A20FF97D20038F7B3 /* LaunchScreen.storyboard */,
+				183C671D20FF97D20038F7B3 /* Info.plist */,
+				1827B60C21170AC5009C189D /* awsconfiguration.json */,
+			);
+			path = warranty;
+			sourceTree = "<group>";
+		};
+		18446EAE21089E8300D85DD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1827B6012116E743009C189D /* AWSNoSQLObject */,
+				18446EB42108B2EE00D85DD1 /* RealmObject */,
+				189569F8210C58EA00070BF3 /* ValWarrantyItem.swift */,
+				189569FE210C59BE00070BF3 /* ValBagBrand.swift */,
+				18956A02210C5A3C00070BF3 /* ValHashtag.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18446EB12108AD9E00D85DD1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				18446EB22108AE3A00D85DD1 /* AppUserDefault.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		18446EB42108B2EE00D85DD1 /* RealmObject */ = {
+			isa = PBXGroup;
+			children = (
+				189569F6210C58A400070BF3 /* RealmWarrantyItem.swift */,
+				189569FA210C596500070BF3 /* RealmBagBrand.swift */,
+				18956A00210C5A2400070BF3 /* RealmHashtag.swift */,
+			);
+			path = RealmObject;
+			sourceTree = "<group>";
+		};
+		18446EB92108B3D200D85DD1 /* DataStoreProvider */ = {
+			isa = PBXGroup;
+			children = (
+				189C2E8E2115614F00DD871B /* ObjectDataStoreProvider.swift */,
+			);
+			path = DataStoreProvider;
+			sourceTree = "<group>";
+		};
+		18956A06210C5B5C00070BF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18956A07210C5C5F00070BF3 /* RealmService.swift */,
+				18956A09210CBF7C00070BF3 /* RealmConnection.swift */,
+				18956A0B210CC01500070BF3 /* RealmServiceError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		189C2E8C21154C4000DD871B /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				189C2E90211561B100DD871B /* InjectionMap.swift */,
+				189C2E92211562CF00DD871B /* LocalStorageProtocol.swift */,
+				189C2E942115D52C00DD871B /* WarrantyItemDataStoreProtocol.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		189C2E8D21154C4A00DD871B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		18F3446F2116C2D9007546BA /* PNOneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				18F344702116C2D9007546BA /* NotificationService.swift */,
+				18F344722116C2D9007546BA /* Info.plist */,
+			);
+			path = PNOneSignal;
+			sourceTree = "<group>";
+		};
+		18F3447F2116C2FA007546BA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				18F344892116C42D007546BA /* OneSignalNotificationServiceExtension.entitlements */,
+				18F344802116C2FA007546BA /* NotificationService.swift */,
+				18F344822116C2FA007546BA /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		2FB2B3C7519D20B9E903BD3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				268B969D9CC3FB4258CAB651 /* Pods-warranty.debug.xcconfig */,
+				218CF3081FE60A1A71E697C0 /* Pods-warranty.release.xcconfig */,
+				17326D328E69000C9E37EC0E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				B738AA213DC581A5E2CEEDFD /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34BF9343BFC251D78492A8DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				331EA347D72A1E4C29BC578C /* Pods_warranty.framework */,
+				743E09AFF99C1083D03ADDBE /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183C670D20FF97D00038F7B3 /* warranty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183C672020FF97D20038F7B3 /* Build configuration list for PBXNativeTarget "warranty" */;
+			buildPhases = (
+				9022EF6BEB87C21A3938D4EA /* [CP] Check Pods Manifest.lock */,
+				183C670A20FF97D00038F7B3 /* Sources */,
+				183C670B20FF97D00038F7B3 /* Frameworks */,
+				183C670C20FF97D00038F7B3 /* Resources */,
+				56EC783B11CF889FF7B8DF53 /* [CP] Embed Pods Frameworks */,
+				895FC333ABDF303C7A864DFD /* [CP] Copy Pods Resources */,
+				18F344792116C2D9007546BA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F344842116C2FA007546BA /* PBXTargetDependency */,
+			);
+			name = warranty;
+			productName = warranty;
+			productReference = 183C670E20FF97D00038F7B3 /* warranty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F3447D2116C2FA007546BA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F344862116C2FA007546BA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				C6445E92E34C557CB5590ECD /* [CP] Check Pods Manifest.lock */,
+				18F3447A2116C2FA007546BA /* Sources */,
+				18F3447B2116C2FA007546BA /* Frameworks */,
+				18F3447C2116C2FA007546BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 18F3447E2116C2FA007546BA /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183C670620FF97D00038F7B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Pakho Yeung";
+				TargetAttributes = {
+					183C670D20FF97D00038F7B3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					18F3447D2116C2FA007546BA = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 183C670920FF97D00038F7B3 /* Build configuration list for PBXProject "warranty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183C670520FF97D00038F7B3;
+			productRefGroup = 183C670F20FF97D00038F7B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183C670D20FF97D00038F7B3 /* warranty */,
+				18F3447D2116C2FA007546BA /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183C670C20FF97D00038F7B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1827B60D21170AC6009C189D /* awsconfiguration.json in Resources */,
+				183C671C20FF97D20038F7B3 /* LaunchScreen.storyboard in Resources */,
+				183C671920FF97D20038F7B3 /* Assets.xcassets in Resources */,
+				183C671720FF97D00038F7B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F3447C2116C2FA007546BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56EC783B11CF889FF7B8DF53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSFacebookSignIn/AWSFacebookSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSGoogleSignIn/AWSGoogleSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSFacebookSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSGoogleSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		895FC333ABDF303C7A864DFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9022EF6BEB87C21A3938D4EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-warranty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6445E92E34C557CB5590ECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183C670A20FF97D00038F7B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189569F7210C58A400070BF3 /* RealmWarrantyItem.swift in Sources */,
+				1827B61221170B35009C189D /* AWSNoSQLWarranty.swift in Sources */,
+				1827B61321170B35009C189D /* AWSNoSQLHashtag.swift in Sources */,
+				18956A08210C5C5F00070BF3 /* RealmService.swift in Sources */,
+				18446EB32108AE3A00D85DD1 /* AppUserDefault.swift in Sources */,
+				189569FF210C59BE00070BF3 /* ValBagBrand.swift in Sources */,
+				189569FB210C596500070BF3 /* RealmBagBrand.swift in Sources */,
+				189C2E952115D52C00DD871B /* WarrantyItemDataStoreProtocol.swift in Sources */,
+				189C2E8F2115614F00DD871B /* ObjectDataStoreProvider.swift in Sources */,
+				183C671420FF97D00038F7B3 /* ViewController.swift in Sources */,
+				189C2E93211562CF00DD871B /* LocalStorageProtocol.swift in Sources */,
+				189C2E91211561B100DD871B /* InjectionMap.swift in Sources */,
+				183C671220FF97D00038F7B3 /* AppDelegate.swift in Sources */,
+				18956A01210C5A2400070BF3 /* RealmHashtag.swift in Sources */,
+				1827B61421170B35009C189D /* AWSNoSQLUser.swift in Sources */,
+				18956A0A210CBF7C00070BF3 /* RealmConnection.swift in Sources */,
+				18956A0C210CC01500070BF3 /* RealmServiceError.swift in Sources */,
+				18956A03210C5A3C00070BF3 /* ValHashtag.swift in Sources */,
+				1827B61521170B35009C189D /* AWSNoSQLBagBrand.swift in Sources */,
+				189569F9210C58EA00070BF3 /* ValWarrantyItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F3447A2116C2FA007546BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F344812116C2FA007546BA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F344842116C2FA007546BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F3447D2116C2FA007546BA /* OneSignalNotificationServiceExtension */;
+			targetProxy = 18F344832116C2FA007546BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		183C671520FF97D00038F7B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183C671620FF97D00038F7B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		183C671A20FF97D20038F7B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183C671B20FF97D20038F7B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		183C671E20FF97D20038F7B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		183C671F20FF97D20038F7B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183C672120FF97D20038F7B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 268B969D9CC3FB4258CAB651 /* Pods-warranty.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = warranty/warranty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = DFE7T78JU6;
+				INFOPLIST_FILE = warranty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paco.warranty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4093949b-1615-4389-8a1c-4268ae8c302d";
+				PROVISIONING_PROFILE_SPECIFIER = ios_warranty;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		183C672220FF97D20038F7B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 218CF3081FE60A1A71E697C0 /* Pods-warranty.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = warranty/warranty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = DFE7T78JU6;
+				INFOPLIST_FILE = warranty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paco.warranty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37541ea1-bf62-422b-a994-c37a97acbee6";
+				PROVISIONING_PROFILE_SPECIFIER = ios_warranty_distribution;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		18F344872116C2FA007546BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17326D328E69000C9E37EC0E /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = DFE7T78JU6;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paco.warranty.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		18F344882116C2FA007546BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B738AA213DC581A5E2CEEDFD /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = DFE7T78JU6;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paco.warranty.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183C670920FF97D00038F7B3 /* Build configuration list for PBXProject "warranty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183C671E20FF97D20038F7B3 /* Debug */,
+				183C671F20FF97D20038F7B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183C672020FF97D20038F7B3 /* Build configuration list for PBXNativeTarget "warranty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183C672120FF97D20038F7B3 /* Debug */,
+				183C672220FF97D20038F7B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F344862116C2FA007546BA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F344872116C2FA007546BA /* Debug */,
+				18F344882116C2FA007546BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 183C670620FF97D00038F7B3 /* Project object */;
+}
