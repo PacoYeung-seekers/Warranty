@@ -7,37 +7,20 @@
 //
 
 import UIKit
-import AWSMobileClient
-import AWSPinpoint
-import AWSGoogleSignIn
-import AWSFacebookSignIn
-import AWSUserPoolsSignIn
-import OneSignal
+//import AWSPinpoint
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var pinpoint: AWSPinpoint?
-
+    //var pinpoint: AWSPinpoint?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //Fackbook login setup
-        AWSFacebookSignInProvider.sharedInstance().setPermissions(["public_profile"])
-        AWSSignInManager.sharedInstance().register(signInProvider: AWSFacebookSignInProvider.sharedInstance())
-        //Google login setup
-        AWSGoogleSignInProvider.sharedInstance().setScopes(["profile", "openid"])
-        AWSSignInManager.sharedInstance().register(signInProvider: AWSGoogleSignInProvider.sharedInstance())
-        //AWS Cognito login setup
-        AWSSignInManager.sharedInstance().register(signInProvider: AWSCognitoUserPoolsSignInProvider.sharedInstance())
         
         //AWS Mobile Client
-        let awsMobileClientInitResult = AWSMobileClient.sharedInstance()
-            .interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
-        //AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
-        //AWSDDLog.sharedInstance.logLevel = .info
-        if  awsMobileClientInitResult == false {
-            fatalError("fail to initizate AWSMobileClient")
-        }
+        AWSMobileClientService.shareInstance().setup(with: application, launchOptions: launchOptions)
+        //AWS AppSync
+        AWSAppSyncService.shareInstance().setup()
         
         //AWS Analytics
 //        let pinpointAnalyticsClient =
@@ -48,85 +31,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            ).analyticsClient
         
         //AWS Push Notification
-        pinpoint =
-            AWSPinpoint(configuration:
-                AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+//        pinpoint =
+//            AWSPinpoint(configuration:
+//                AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
         
         //OneSignal Push Notification
-        let notificationReceivedBlock: OSHandleNotificationReceivedBlock = { notification in
-            
-            print("Received Notification: \(notification!.payload.notificationID)")
-        }
-        
-        let notificationOpenedBlock: OSHandleNotificationActionBlock = { result in
-            // This block gets called when the user reacts to a notification received
-            let payload: OSNotificationPayload = result!.notification.payload
-            
-            var fullMessage = payload.body
-            print("Message = \(fullMessage ?? "")")
-            
-            if payload.additionalData != nil {
-                if payload.title != nil {
-                    let messageTitle = payload.title
-                    print("Message Title = \(messageTitle!)")
-                }
-                
-                let additionalData = payload.additionalData
-                if additionalData?["actionSelected"] != nil {
-                    fullMessage = fullMessage! + "\nPressed ButtonID: \(additionalData!["actionSelected"])"
-                }
-            }
-        }
-        
-        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
-        
-        // Replace 'YOUR_APP_ID' with your OneSignal App ID.
-        OneSignal.initWithLaunchOptions(launchOptions,
-                                        appId: "fa3ab678-59e0-4d3d-bc03-a1db8c5b8cc0",
-                                        handleNotificationReceived: notificationReceivedBlock, 
-                                        handleNotificationAction: notificationOpenedBlock,
-                                        settings: onesignalInitSettings)
-        
-        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
-        
-        // Recommend moving the below line to prompt for push after informing the user about
-        //   how your app will use them.
-        OneSignal.promptForPushNotifications(userResponse: { accepted in
-            print("User accepted notifications: \(accepted)")
-        })
+        _ = OneSignalService(launchOptions: launchOptions)
         
         return true
     }
     
     func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        
-         let awsOpenUrlResult = AWSMobileClient.sharedInstance().interceptApplication(
-            application, open: url,
-            sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
-            annotation: options[UIApplicationOpenURLOptionsKey.annotation]!)
-        return awsOpenUrlResult
+         return AWSMobileClientService.shareInstance().open(with: url, options: options)
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         //AWS Push Notification
-        pinpoint!.notificationManager.interceptDidRegisterForRemoteNotifications(
-            withDeviceToken: deviceToken)
+//        pinpoint!.notificationManager.interceptDidRegisterForRemoteNotifications(
+//            withDeviceToken: deviceToken)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         //AWS Push Notification
-        pinpoint!.notificationManager.interceptDidReceiveRemoteNotification(
-            userInfo, fetchCompletionHandler: completionHandler)
-        
-        if (application.applicationState == .active) {
-            let alert = UIAlertController(title: "Notification Received",
-                                          message: userInfo.description,
-                                          preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            
-            UIApplication.shared.keyWindow?.rootViewController?.present(
-                alert, animated: true, completion:nil)
-        }
+//        pinpoint!.notificationManager.interceptDidReceiveRemoteNotification(
+//            userInfo, fetchCompletionHandler: completionHandler)
+//
+//        if (application.applicationState == .active) {
+//            let alert = UIAlertController(title: "Notification Received",
+//                                          message: userInfo.description,
+//                                          preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+//
+//            UIApplication.shared.keyWindow?.rootViewController?.present(
+//                alert, animated: true, completion:nil)
+//        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -153,4 +91,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

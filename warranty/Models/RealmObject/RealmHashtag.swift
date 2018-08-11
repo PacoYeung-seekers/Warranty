@@ -11,7 +11,6 @@ import RealmSwift
 
 class RealmHashtag: Object, PrimaryKeyRequired {
     @objc dynamic var id = ""
-    @objc dynamic var hashName = ""
     @objc dynamic var name = ""
     
     override static func primaryKey() -> String? {
@@ -20,7 +19,6 @@ class RealmHashtag: Object, PrimaryKeyRequired {
     
     enum AttributeKeys: String {
         case id = "id"
-        case hashName = "hashName"
         case name = "name"
     }
     

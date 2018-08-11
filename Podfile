@@ -21,9 +21,10 @@ target 'warranty' do
   pod 'AWSFacebookSignIn', '~> 2.6.13'
   # - - Google
   pod 'AWSGoogleSignIn', '~> 2.6.13'
-  pod 'GoogleSignIn', '~> 4.0'
   
   pod 'AWSAuthUI', '~> 2.6.13'
+  # - - AppSync
+  pod 'AWSAppSync', '~> 2.6.13'
   
   #Onesignal - Push Notification
   pod 'OneSignal', '>= 2.6.2', '< 3.0'

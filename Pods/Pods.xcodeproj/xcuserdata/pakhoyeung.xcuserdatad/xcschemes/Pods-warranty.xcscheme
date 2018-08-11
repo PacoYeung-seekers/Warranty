@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE90932FD079A7A72F937EF38058065D"
+               BlueprintIdentifier = "FD6ABD2BE190221D77B4F92AD396DDE2"
                BuildableName = "Pods_warranty.framework"
                BlueprintName = "Pods-warranty"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE90932FD079A7A72F937EF38058065D"
+            BlueprintIdentifier = "FD6ABD2BE190221D77B4F92AD396DDE2"
             BuildableName = "Pods_warranty.framework"
             BlueprintName = "Pods-warranty"
             ReferencedContainer = "container:Pods.xcodeproj">

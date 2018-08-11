@@ -9,11 +9,11 @@
 import Foundation
 
 struct ValHashtag: Codable {
-    let hashName: String
+    let id: String
     let name: String
     
     enum CodingKeys: String, CodingKey {
-        case hashName
+        case id
         case name
     }
 }

@@ -18,6 +18,15 @@
 		183C671920FF97D20038F7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183C671820FF97D20038F7B3 /* Assets.xcassets */; };
 		183C671C20FF97D20038F7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183C671A20FF97D20038F7B3 /* LaunchScreen.storyboard */; };
 		18446EB32108AE3A00D85DD1 /* AppUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18446EB22108AE3A00D85DD1 /* AppUserDefault.swift */; };
+		184EA821211EC9B50086E52B /* AWSAppSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EA820211EC9B50086E52B /* AWSAppSyncService.swift */; };
+		184EA823211ECDE60086E52B /* AWSAppSyncServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EA822211ECDE60086E52B /* AWSAppSyncServiceError.swift */; };
+		184EA825211ED4FE0086E52B /* AWSAppSyncConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EA824211ED4FE0086E52B /* AWSAppSyncConstants.swift */; };
+		184EA828211EE6630086E52B /* OneSignalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EA827211EE6630086E52B /* OneSignalService.swift */; };
+		184EA82A211EE6D70086E52B /* OneSignalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EA829211EE6D70086E52B /* OneSignalConstants.swift */; };
+		184EA82D211EF6A70086E52B /* AWSMobileClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EA82C211EF6A70086E52B /* AWSMobileClientService.swift */; };
+		184EA82F211EFA800086E52B /* AWSMobileClientServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EA82E211EFA800086E52B /* AWSMobileClientServiceError.swift */; };
+		185CC1DD211B4BED0027029F /* AWSGraphicQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CC1DC211B4BED0027029F /* AWSGraphicQL.swift */; };
+		185CC1E1211B57C90027029F /* AppSync.json in Resources */ = {isa = PBXBuildFile; fileRef = 185CC1E0211B57C90027029F /* AppSync.json */; };
 		189569F7210C58A400070BF3 /* RealmWarrantyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189569F6210C58A400070BF3 /* RealmWarrantyItem.swift */; };
 		189569F9210C58EA00070BF3 /* ValWarrantyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189569F8210C58EA00070BF3 /* ValWarrantyItem.swift */; };
 		189569FB210C596500070BF3 /* RealmBagBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189569FA210C596500070BF3 /* RealmBagBrand.swift */; };
@@ -76,6 +85,15 @@
 		183C671B20FF97D20038F7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183C671D20FF97D20038F7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18446EB22108AE3A00D85DD1 /* AppUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefault.swift; sourceTree = "<group>"; };
+		184EA820211EC9B50086E52B /* AWSAppSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAppSyncService.swift; sourceTree = "<group>"; };
+		184EA822211ECDE60086E52B /* AWSAppSyncServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAppSyncServiceError.swift; sourceTree = "<group>"; };
+		184EA824211ED4FE0086E52B /* AWSAppSyncConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAppSyncConstants.swift; sourceTree = "<group>"; };
+		184EA827211EE6630086E52B /* OneSignalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSignalService.swift; sourceTree = "<group>"; };
+		184EA829211EE6D70086E52B /* OneSignalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSignalConstants.swift; sourceTree = "<group>"; };
+		184EA82C211EF6A70086E52B /* AWSMobileClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSMobileClientService.swift; sourceTree = "<group>"; };
+		184EA82E211EFA800086E52B /* AWSMobileClientServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSMobileClientServiceError.swift; sourceTree = "<group>"; };
+		185CC1DC211B4BED0027029F /* AWSGraphicQL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSGraphicQL.swift; sourceTree = "<group>"; };
+		185CC1E0211B57C90027029F /* AppSync.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppSync.json; sourceTree = "<group>"; };
 		189569F6210C58A400070BF3 /* RealmWarrantyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWarrantyItem.swift; sourceTree = "<group>"; };
 		189569F8210C58EA00070BF3 /* ValWarrantyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValWarrantyItem.swift; sourceTree = "<group>"; };
 		189569FA210C596500070BF3 /* RealmBagBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBagBrand.swift; sourceTree = "<group>"; };
@@ -171,6 +189,7 @@
 				183C671820FF97D20038F7B3 /* Assets.xcassets */,
 				183C671A20FF97D20038F7B3 /* LaunchScreen.storyboard */,
 				183C671D20FF97D20038F7B3 /* Info.plist */,
+				185CC1E0211B57C90027029F /* AppSync.json */,
 				1827B60C21170AC5009C189D /* awsconfiguration.json */,
 			);
 			path = warranty;
@@ -214,12 +233,52 @@
 			path = DataStoreProvider;
 			sourceTree = "<group>";
 		};
-		18956A06210C5B5C00070BF3 /* Services */ = {
+		184EA826211EE5FF0086E52B /* OneSignalService */ = {
+			isa = PBXGroup;
+			children = (
+				184EA827211EE6630086E52B /* OneSignalService.swift */,
+				184EA829211EE6D70086E52B /* OneSignalConstants.swift */,
+			);
+			path = OneSignalService;
+			sourceTree = "<group>";
+		};
+		184EA82B211EF6830086E52B /* AWSMobileClientService */ = {
+			isa = PBXGroup;
+			children = (
+				184EA82C211EF6A70086E52B /* AWSMobileClientService.swift */,
+				184EA82E211EFA800086E52B /* AWSMobileClientServiceError.swift */,
+			);
+			path = AWSMobileClientService;
+			sourceTree = "<group>";
+		};
+		185CC1DA211B4BC40027029F /* Realm */ = {
 			isa = PBXGroup;
 			children = (
 				18956A07210C5C5F00070BF3 /* RealmService.swift */,
 				18956A09210CBF7C00070BF3 /* RealmConnection.swift */,
 				18956A0B210CC01500070BF3 /* RealmServiceError.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		185CC1DB211B4BD60027029F /* AWSAppSync */ = {
+			isa = PBXGroup;
+			children = (
+				185CC1DC211B4BED0027029F /* AWSGraphicQL.swift */,
+				184EA820211EC9B50086E52B /* AWSAppSyncService.swift */,
+				184EA822211ECDE60086E52B /* AWSAppSyncServiceError.swift */,
+				184EA824211ED4FE0086E52B /* AWSAppSyncConstants.swift */,
+			);
+			path = AWSAppSync;
+			sourceTree = "<group>";
+		};
+		18956A06210C5B5C00070BF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				184EA82B211EF6830086E52B /* AWSMobileClientService */,
+				184EA826211EE5FF0086E52B /* OneSignalService */,
+				185CC1DB211B4BD60027029F /* AWSAppSync */,
+				185CC1DA211B4BC40027029F /* Realm */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,7 +351,6 @@
 				183C670B20FF97D00038F7B3 /* Frameworks */,
 				183C670C20FF97D00038F7B3 /* Resources */,
 				56EC783B11CF889FF7B8DF53 /* [CP] Embed Pods Frameworks */,
-				895FC333ABDF303C7A864DFD /* [CP] Copy Pods Resources */,
 				18F344792116C2D9007546BA /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -380,6 +438,7 @@
 			files = (
 				1827B60D21170AC6009C189D /* awsconfiguration.json in Resources */,
 				183C671C20FF97D20038F7B3 /* LaunchScreen.storyboard in Resources */,
+				185CC1E1211B57C90027029F /* AppSync.json in Resources */,
 				183C671920FF97D20038F7B3 /* Assets.xcassets in Resources */,
 				183C671720FF97D00038F7B3 /* Main.storyboard in Resources */,
 			);
@@ -402,6 +461,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAppSync/AWSAppSync.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
@@ -416,17 +476,17 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAppSync.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
@@ -441,36 +501,17 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		895FC333ABDF303C7A864DFD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-warranty/Pods-warranty-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9022EF6BEB87C21A3938D4EA /* [CP] Check Pods Manifest.lock */ = {
@@ -522,19 +563,27 @@
 				18956A08210C5C5F00070BF3 /* RealmService.swift in Sources */,
 				18446EB32108AE3A00D85DD1 /* AppUserDefault.swift in Sources */,
 				189569FF210C59BE00070BF3 /* ValBagBrand.swift in Sources */,
+				184EA823211ECDE60086E52B /* AWSAppSyncServiceError.swift in Sources */,
 				189569FB210C596500070BF3 /* RealmBagBrand.swift in Sources */,
 				189C2E952115D52C00DD871B /* WarrantyItemDataStoreProtocol.swift in Sources */,
 				189C2E8F2115614F00DD871B /* ObjectDataStoreProvider.swift in Sources */,
 				183C671420FF97D00038F7B3 /* ViewController.swift in Sources */,
 				189C2E93211562CF00DD871B /* LocalStorageProtocol.swift in Sources */,
+				184EA821211EC9B50086E52B /* AWSAppSyncService.swift in Sources */,
 				189C2E91211561B100DD871B /* InjectionMap.swift in Sources */,
 				183C671220FF97D00038F7B3 /* AppDelegate.swift in Sources */,
+				184EA82F211EFA800086E52B /* AWSMobileClientServiceError.swift in Sources */,
 				18956A01210C5A2400070BF3 /* RealmHashtag.swift in Sources */,
+				184EA828211EE6630086E52B /* OneSignalService.swift in Sources */,
+				185CC1DD211B4BED0027029F /* AWSGraphicQL.swift in Sources */,
 				1827B61421170B35009C189D /* AWSNoSQLUser.swift in Sources */,
 				18956A0A210CBF7C00070BF3 /* RealmConnection.swift in Sources */,
 				18956A0C210CC01500070BF3 /* RealmServiceError.swift in Sources */,
 				18956A03210C5A3C00070BF3 /* ValHashtag.swift in Sources */,
+				184EA82A211EE6D70086E52B /* OneSignalConstants.swift in Sources */,
+				184EA82D211EF6A70086E52B /* AWSMobileClientService.swift in Sources */,
 				1827B61521170B35009C189D /* AWSNoSQLBagBrand.swift in Sources */,
+				184EA825211ED4FE0086E52B /* AWSAppSyncConstants.swift in Sources */,
 				189569F9210C58EA00070BF3 /* ValWarrantyItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

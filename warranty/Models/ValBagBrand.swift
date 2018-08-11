@@ -8,38 +8,16 @@
 
 import Foundation
 
-struct ValBagBrandZH: Codable {
-    let id: Int
-    let hashName: String
-    let name: String
+struct ValBagBrand: Codable {
+    let id: String
+    let nameENG: String
+    let nameCN: String
+    let nameZH: String
     
     enum CodingKeys: String, CodingKey {
         case id
-        case hashName
-        case name
-    }
-}
-
-struct ValBagBrandENG: Codable {
-    let id: Int
-    let hashName: String
-    let name: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case hashName
-        case name
-    }
-}
-
-struct ValBagBrandCN: Codable {
-    let id: Int
-    let hashName: String
-    let name: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case hashName
-        case name
+        case nameENG
+        case nameCN
+        case nameZH
     }
 }

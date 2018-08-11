@@ -9,10 +9,11 @@
 import Foundation
 import RealmSwift
 
-class RealmBagBrandZH: Object, PrimaryKeyRequired {
+class RealmBagBrand: Object, PrimaryKeyRequired {
     @objc dynamic var id = ""
-    @objc dynamic var hashName = ""
-    @objc dynamic var name = ""
+    @objc dynamic var nameENG = ""
+    @objc dynamic var nameCZ = ""
+    @objc dynamic var nameZH = ""
     
     override static func primaryKey() -> String? {
         return "id"
@@ -20,39 +21,9 @@ class RealmBagBrandZH: Object, PrimaryKeyRequired {
     
     enum AttributeKeys: String {
         case id = "id"
-        case hashName = "hashName"
-        case name = "name"
+        case nameENG = "nameENG"
+        case nameCZ = "nameCZ"
+        case nameZH = "nameZH"
     }
 }
 
-class RealmBagBrandENG: Object, PrimaryKeyRequired {
-    @objc dynamic var id = ""
-    @objc dynamic var hashName = ""
-    @objc dynamic var name = ""
-    
-    override static func primaryKey() -> String? {
-        return "id"
-    }
-    
-    enum AttributeKeys: String {
-        case id = "id"
-        case hashName = "hashName"
-        case name = "name"
-    }
-}
-
-class RealmBagBrandCN: Object, PrimaryKeyRequired {
-    @objc dynamic var id = ""
-    @objc dynamic var hashName = ""
-    @objc dynamic var name = ""
-    
-    override static func primaryKey() -> String? {
-        return "id"
-    }
-    
-    enum AttributeKeys: String {
-        case id = "id"
-        case hashName = "hashName"
-        case name = "name"
-    }
-}

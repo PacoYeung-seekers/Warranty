@@ -9,19 +9,35 @@
 import Foundation
 
 struct ValWarrantyItem: Codable  {
-    let uploadTime:String
-    let buyTime:String
-    let days: Int
-    let imageLink: String?
-    let hashtag: String?
-    let bagBrandId: Int
+    let id: String
+    let uploadAt:String
+    let protectAt:String
+    let duration: Int
+    let hashtag: String
+    let phone: String
+    let email: String
     
+    let docImageLink: Set<String>?
+    let docImageBinary: Set<Data>?
+    
+    let productImageLink: Set<String>?
+    let productThumbnailLink: String?
+    let productImageBinary: Set<Data>?
+    
+    
+
     enum CodingKeys: String, CodingKey {
-        case uploadTime
-        case buyTime
-        case days
-        case imageLink
+        case id
+        case uploadAt
+        case protectAt
+        case duration
         case hashtag
-        case bagBrandId
+        case phone
+        case email
+        case docImageLink
+        case docImageBinary
+        case productImageLink
+        case productThumbnailLink
+        case productImageBinary
     }
 }
