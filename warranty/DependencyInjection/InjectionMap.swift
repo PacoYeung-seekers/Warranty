@@ -10,6 +10,9 @@ import Foundation
 
 
 class InjectionMap {
+    //Provider
     static var localStorageRealmProvider = RealmService.shared
+    static var awsAppSyncProvider = AWSAppSyncService.shareInstance()
+    //DataStore Provider
     static var warrantyItemDataStoreProvider = ObjectDataStorageProvider<RealmWarrantyItem>()
 }

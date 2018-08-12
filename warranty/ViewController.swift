@@ -89,6 +89,28 @@ extension ViewController {
         //get appSync reference from appDelegate
         let appSyncClient = AWSAppSyncService.shareInstance().getAppSyncClient()
         
+        let subscription = OnCreateGraphicBagBrandSubscription(nameENG: "333")
+        do {
+            _ = try appSyncClient?.subscribe(
+                subscription: subscription,
+                resultHandler: { (result, transaction, error) in
+                    guard let result = result else {
+                        print(error)
+                        return
+                    }
+                    guard let data = result.data?.onCreateGraphicBagBrand else {
+                        print(error)
+                        return
+                    }
+                    let object = GraphicBagBrand.init(id: data.id, nameCn: data.nameCn, nameEng: data.nameEng, nameZh: data.nameZh)
+                    print("OnCreateGraphicBagBrandSubscription")
+                    print(object)
+            })
+        } catch {
+            print("subscribe fail")
+        }
+        
+        
         appSyncClient?.fetch(query: ListGraphicBagBrandsQuery(filter: nil, limit: nil, nextToken: nil), cachePolicy: .returnCacheDataAndFetch)  { (result, error) in
             if error != nil {
                 print(error?.localizedDescription ?? "")
@@ -98,7 +120,7 @@ extension ViewController {
         }
         
         
-        let graphQLMutation = CreateGraphicBagBrandMutation(input: CreateGraphicBagBrandInput(id: "4", nameCn: "圣罗兰", nameEng: "YSL", nameZh: "聖羅蘭") )
+        let graphQLMutation = CreateGraphicBagBrandMutation(input: CreateGraphicBagBrandInput(id: "5", nameCn: "圣罗兰", nameEng: "YSL", nameZh: "聖羅蘭") )
         appSyncClient?.perform(mutation: graphQLMutation) { (result, error) in
             if let error = error as? AWSAppSyncClientError {
                 print("Error occurred while making request: \(error.localizedDescription )")

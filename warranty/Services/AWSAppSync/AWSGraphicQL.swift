@@ -847,29 +847,23 @@ public final class GetGraphicBagBrandQuery: GraphQLQuery {
 
 public final class OnCreateGraphicBagBrandSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateGraphicBagBrand($id: String, $nameCN: String, $nameENG: String, $nameZH: String) {\n  onCreateGraphicBagBrand(id: $id, nameCN: $nameCN, nameENG: $nameENG, nameZH: $nameZH) {\n    __typename\n    id\n    nameCN\n    nameENG\n    nameZH\n  }\n}"
+    "subscription OnCreateGraphicBagBrand($nameENG: String!) {\n  onCreateGraphicBagBrand(nameENG: $nameENG) {\n    __typename\n    id\n    nameCN\n    nameENG\n    nameZH\n  }\n}"
 
-  public var id: String?
-  public var nameCN: String?
-  public var nameENG: String?
-  public var nameZH: String?
+  public var nameENG: String
 
-  public init(id: String? = nil, nameCN: String? = nil, nameENG: String? = nil, nameZH: String? = nil) {
-    self.id = id
-    self.nameCN = nameCN
+  public init(nameENG: String) {
     self.nameENG = nameENG
-    self.nameZH = nameZH
   }
 
   public var variables: GraphQLMap? {
-    return ["id": id, "nameCN": nameCN, "nameENG": nameENG, "nameZH": nameZH]
+    return ["nameENG": nameENG]
   }
 
   public struct Data: GraphQLSelectionSet {
     public static let possibleTypes = ["Subscription"]
 
     public static let selections: [GraphQLSelection] = [
-      GraphQLField("onCreateGraphicBagBrand", arguments: ["id": GraphQLVariable("id"), "nameCN": GraphQLVariable("nameCN"), "nameENG": GraphQLVariable("nameENG"), "nameZH": GraphQLVariable("nameZH")], type: .object(OnCreateGraphicBagBrand.selections)),
+      GraphQLField("onCreateGraphicBagBrand", arguments: ["nameENG": GraphQLVariable("nameENG")], type: .object(OnCreateGraphicBagBrand.selections)),
     ]
 
     public var snapshot: Snapshot
@@ -962,29 +956,16 @@ public final class OnCreateGraphicBagBrandSubscription: GraphQLSubscription {
 
 public final class OnDeleteGraphicBagBrandSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteGraphicBagBrand($id: String, $nameCN: String, $nameENG: String, $nameZH: String) {\n  onDeleteGraphicBagBrand(id: $id, nameCN: $nameCN, nameENG: $nameENG, nameZH: $nameZH) {\n    __typename\n    id\n    nameCN\n    nameENG\n    nameZH\n  }\n}"
+    "subscription OnDeleteGraphicBagBrand {\n  onDeleteGraphicBagBrand {\n    __typename\n    id\n    nameCN\n    nameENG\n    nameZH\n  }\n}"
 
-  public var id: String?
-  public var nameCN: String?
-  public var nameENG: String?
-  public var nameZH: String?
-
-  public init(id: String? = nil, nameCN: String? = nil, nameENG: String? = nil, nameZH: String? = nil) {
-    self.id = id
-    self.nameCN = nameCN
-    self.nameENG = nameENG
-    self.nameZH = nameZH
-  }
-
-  public var variables: GraphQLMap? {
-    return ["id": id, "nameCN": nameCN, "nameENG": nameENG, "nameZH": nameZH]
+  public init() {
   }
 
   public struct Data: GraphQLSelectionSet {
     public static let possibleTypes = ["Subscription"]
 
     public static let selections: [GraphQLSelection] = [
-      GraphQLField("onDeleteGraphicBagBrand", arguments: ["id": GraphQLVariable("id"), "nameCN": GraphQLVariable("nameCN"), "nameENG": GraphQLVariable("nameENG"), "nameZH": GraphQLVariable("nameZH")], type: .object(OnDeleteGraphicBagBrand.selections)),
+      GraphQLField("onDeleteGraphicBagBrand", type: .object(OnDeleteGraphicBagBrand.selections)),
     ]
 
     public var snapshot: Snapshot
@@ -1077,29 +1058,16 @@ public final class OnDeleteGraphicBagBrandSubscription: GraphQLSubscription {
 
 public final class OnUpdateGraphicBagBrandSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateGraphicBagBrand($id: String, $nameCN: String, $nameENG: String, $nameZH: String) {\n  onUpdateGraphicBagBrand(id: $id, nameCN: $nameCN, nameENG: $nameENG, nameZH: $nameZH) {\n    __typename\n    id\n    nameCN\n    nameENG\n    nameZH\n  }\n}"
+    "subscription OnUpdateGraphicBagBrand {\n  onUpdateGraphicBagBrand {\n    __typename\n    id\n    nameCN\n    nameENG\n    nameZH\n  }\n}"
 
-  public var id: String?
-  public var nameCN: String?
-  public var nameENG: String?
-  public var nameZH: String?
-
-  public init(id: String? = nil, nameCN: String? = nil, nameENG: String? = nil, nameZH: String? = nil) {
-    self.id = id
-    self.nameCN = nameCN
-    self.nameENG = nameENG
-    self.nameZH = nameZH
-  }
-
-  public var variables: GraphQLMap? {
-    return ["id": id, "nameCN": nameCN, "nameENG": nameENG, "nameZH": nameZH]
+  public init() {
   }
 
   public struct Data: GraphQLSelectionSet {
     public static let possibleTypes = ["Subscription"]
 
     public static let selections: [GraphQLSelection] = [
-      GraphQLField("onUpdateGraphicBagBrand", arguments: ["id": GraphQLVariable("id"), "nameCN": GraphQLVariable("nameCN"), "nameENG": GraphQLVariable("nameENG"), "nameZH": GraphQLVariable("nameZH")], type: .object(OnUpdateGraphicBagBrand.selections)),
+      GraphQLField("onUpdateGraphicBagBrand", type: .object(OnUpdateGraphicBagBrand.selections)),
     ]
 
     public var snapshot: Snapshot
@@ -1186,6 +1154,76 @@ public final class OnUpdateGraphicBagBrandSubscription: GraphQLSubscription {
           snapshot.updateValue(newValue, forKey: "nameZH")
         }
       }
+    }
+  }
+}
+
+public struct GraphicBagBrand: GraphQLFragment {
+  public static let fragmentString =
+    "fragment GraphicBagBrand on GraphicBagBrand {\n  __typename\n  id\n  nameCN\n  nameENG\n  nameZH\n}"
+
+  public static let possibleTypes = ["GraphicBagBrand"]
+
+  public static let selections: [GraphQLSelection] = [
+    GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+    GraphQLField("id", type: .nonNull(.scalar(String.self))),
+    GraphQLField("nameCN", type: .scalar(String.self)),
+    GraphQLField("nameENG", type: .scalar(String.self)),
+    GraphQLField("nameZH", type: .scalar(String.self)),
+  ]
+
+  public var snapshot: Snapshot
+
+  public init(snapshot: Snapshot) {
+    self.snapshot = snapshot
+  }
+
+  public init(id: String, nameCn: String? = nil, nameEng: String? = nil, nameZh: String? = nil) {
+    self.init(snapshot: ["__typename": "GraphicBagBrand", "id": id, "nameCN": nameCn, "nameENG": nameEng, "nameZH": nameZh])
+  }
+
+  public var __typename: String {
+    get {
+      return snapshot["__typename"]! as! String
+    }
+    set {
+      snapshot.updateValue(newValue, forKey: "__typename")
+    }
+  }
+
+  public var id: String {
+    get {
+      return snapshot["id"]! as! String
+    }
+    set {
+      snapshot.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var nameCn: String? {
+    get {
+      return snapshot["nameCN"] as? String
+    }
+    set {
+      snapshot.updateValue(newValue, forKey: "nameCN")
+    }
+  }
+
+  public var nameEng: String? {
+    get {
+      return snapshot["nameENG"] as? String
+    }
+    set {
+      snapshot.updateValue(newValue, forKey: "nameENG")
+    }
+  }
+
+  public var nameZh: String? {
+    get {
+      return snapshot["nameZH"] as? String
+    }
+    set {
+      snapshot.updateValue(newValue, forKey: "nameZH")
     }
   }
 }
